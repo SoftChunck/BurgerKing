@@ -1,0 +1,299 @@
+@font-face {
+  font-family: RetroTeam-CF;
+  src: url(Fonts/RetroTeam.otf);
+}
+@font-face {
+  font-family: Bewise-CF;
+  src: url(Fonts/Bewise.ttf);
+}
+body {
+  margin: 0px;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+}
+
+.landing-section {
+  background-image: url("Images/landing-bg1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-color: black;
+  display: box;
+  height: auto;
+}
+.landing-section .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.landing-section .navbar img {
+  padding: 50px;
+  width: 80px;
+  height: 80px;
+}
+.landing-section .navbar .navbar-list {
+  display: flex;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-right: 10%;
+}
+.landing-section .navbar .navbar-list ul {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+}
+.landing-section .navbar .navbar-list ul li {
+  font-family: RetroTeam-CF;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.landing-section .navbar .navbar-list ul li:hover {
+  color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.landing-section .navbar .navbar-list .socialmedia {
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+}
+.landing-section .navbar .navbar-list .socialmedia i {
+  color: white;
+}
+.landing-section .navbar .navbar-list .socialmedia i:hover {
+  color: orange;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.landing-section .text-div {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: 10%;
+}
+.landing-section .text-div h1 {
+  margin: 0;
+  font-family: RetroTeam-Cf;
+  font-size: 8vw;
+  color: orange;
+  font-weight: 300;
+  text-align: center;
+}
+.landing-section .text-div h3 {
+  font-size: 1.5vw;
+  font-family: RetroTeam-Cf;
+  font-weight: 200;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.order-button {
+  background-color: orange;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border: none;
+}
+
+.order-button:hover {
+  background-color: orangered;
+  transition: 1s;
+}
+
+.heading-top {
+  margin: 0;
+  text-align: center;
+  font-family: Bewise-CF;
+  font-weight: 100;
+  color: red;
+  font-size: 3vw;
+}
+
+.sub-heading {
+  margin: 0;
+  text-align: center;
+  font-family: RetroTeam-CF;
+  font-weight: 300;
+  color: black;
+  font-size: 4vw;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 0;
+}
+.menu ul {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu ul li:hover {
+  color: orangered;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu .menu-items {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 22vw 22vw 22vw 22vw;
+  grid-template-rows: 60vh 60vh;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.menu .menu-items .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu-items .menu-item h4 {
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  margin: 0;
+  padding-top: 10px;
+}
+.menu .menu-items .menu-item p {
+  font-family: sans-serif;
+  color: rgb(174, 167, 167);
+  font-size: 1.1vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  margin: 0 0 0 20;
+}
+.menu .menu-items .menu-item h2 {
+  margin: 0;
+  color: red;
+  font-family: sans-serif;
+}
+.menu .menu-items .menu-item button {
+  color: white;
+  background-color: orange;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+}
+.menu .menu-items .menu-item button:hover {
+  background-color: orangered;
+  transition: 0.5s;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background-image: url("Images/Testimonials-bg1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.testimonials h3 {
+  color: orange;
+}
+.testimonials h1 {
+  color: white;
+}
+.testimonials .clients-img {
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.testimonials .clients {
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.testimonials .clients .client {
+  margin: 10px;
+  width: 370px;
+  background-color: white;
+}
+.testimonials .clients .client h4 {
+  font-family: sans-serif;
+  font-size: 1.5vw;
+  margin: 15px;
+  padding-top: 10px;
+}
+.testimonials .clients .client p {
+  font-family: sans-serif;
+  color: rgb(139, 133, 133);
+  font-size: 1vw;
+  font-weight: 100;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  margin: 0 0 0 20;
+}
+.testimonials .clients .client i {
+  color: red;
+  margin: 15px;
+}
+
+.contact-us .contact-map {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-us form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-us form .input-text {
+  background-color: rgb(247, 247, 247);
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: sans-serif;
+  color: gray;
+  margin-top: 15px;
+  width: 500px;
+}
+.contact-us form input {
+  height: 30px;
+}
+.contact-us form .send-btn {
+  background-color: red;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+  width: 550px;
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+}
+.contact-us form .send-btn:hover {
+  background-color: orange;
+  transition-duration: 1s;
+}
+.contact-us iframe {
+  width: 40%;
+  flex-shrink: 1;
+}
