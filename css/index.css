@@ -18,10 +18,12 @@ body {
   background-size: cover;
   background-position: bottom;
   background-color: black;
-  display: box;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  height: 50vw;
 }
 .landing-section .navbar {
+  justify-self: flex-start;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,18 +74,17 @@ body {
   cursor: pointer;
 }
 .landing-section .text-div {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 1;
-  flex-grow: 1;
+  margin-top: 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  justify-content: left;
   align-items: center;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  grid-template-rows: auto;
   padding-left: 10%;
 }
 .landing-section .text-div h1 {
+  width: fit-content;
   margin: 0;
   font-family: RetroTeam-Cf;
   font-size: 8vw;
@@ -92,9 +93,10 @@ body {
   text-align: center;
 }
 .landing-section .text-div h3 {
+  width: fit-content;
   font-size: 1.5vw;
   font-family: RetroTeam-Cf;
-  font-weight: 200;
+  font-weight: 100;
   color: white;
   font-weight: normal;
   text-align: center;
@@ -109,6 +111,7 @@ body {
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   border: none;
+  max-width: 180px;
 }
 
 .order-button:hover {
@@ -155,9 +158,9 @@ body {
 }
 .menu .menu-items {
   display: grid;
-  width: 90vw;
-  grid-template-columns: 22vw 22vw 22vw 22vw;
-  grid-template-rows: 60vh 60vh;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -166,6 +169,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.menu .menu-items .menu-item img {
+  width: 18vw;
+  height: 15vw;
+}
 .menu .menu-items .menu-item h4 {
   font-family: sans-serif;
   font-size: 1.5vw;
@@ -173,13 +180,13 @@ body {
   padding-top: 10px;
 }
 .menu .menu-items .menu-item p {
+  max-width: 15vw;
   font-family: sans-serif;
   color: rgb(174, 167, 167);
-  font-size: 1.1vw;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 1vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   text-align: center;
-  margin: 0 0 0 20;
 }
 .menu .menu-items .menu-item h2 {
   margin: 0;
@@ -203,58 +210,62 @@ body {
 }
 
 .testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
   background-image: url("Images/Testimonials-bg1.jpg");
   background-size: cover;
   background-position: center;
+  justify-items: center;
 }
 .testimonials h3 {
   color: orange;
+  grid-column: span 3;
 }
 .testimonials h1 {
   color: white;
+  grid-column: span 3;
 }
-.testimonials .clients-img {
+.testimonials img {
+  width: 30vw;
+  height: 31vw;
+}
+.testimonials .client {
   display: flex;
-  margin-top: 15px;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.testimonials .clients {
-  display: flex;
-  margin-top: 15px;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.testimonials .clients .client {
-  margin: 10px;
-  width: 370px;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: white;
 }
-.testimonials .clients .client h4 {
+.testimonials .client h4 {
   font-family: sans-serif;
-  font-size: 1.5vw;
-  margin: 15px;
+  font-size: 1.8vw;
+  margin: 1vw;
   padding-top: 10px;
 }
-.testimonials .clients .client p {
+.testimonials .client p {
   font-family: sans-serif;
   color: rgb(139, 133, 133);
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: 100;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   text-align: justify;
-  margin: 0 0 0 20;
 }
-.testimonials .clients .client i {
+.testimonials .client i {
   color: red;
   margin: 15px;
 }
 
+.contact-us {
+  margin-top: 30px;
+}
 .contact-us .contact-map {
   display: flex;
   justify-content: space-around;
