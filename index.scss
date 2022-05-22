@@ -31,18 +31,18 @@ body{
         height: 100px;
         img{
             padding: 50px;
-            width: 80px;
-            height: 80px;
+            width: 6vw;
+            height: 6vw;
         }
         .navbar-list{
             display: flex;
-            width: 50%;
+            width: 70vw;
             align-items: flex-end;
             justify-content: space-between;
             padding-right: 10%;
             ul{
                 margin: 0;
-                width: 80%;
+                width: 60vw;
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
@@ -50,7 +50,7 @@ body{
                 li{
                     font-family: RetroTeam-CF;
                     font-weight:200;
-                    letter-spacing: 2px;
+                    letter-spacing: 3px;
                 }
                 li:hover{
                     color: $main-color;
@@ -61,7 +61,7 @@ body{
             .socialmedia{
                 display: flex;
                 justify-content: space-evenly;
-                width: 150px;
+                width: 15vw;
                 i{
                     color: white;
                 }
@@ -141,11 +141,12 @@ body{
     background-color: white;
     margin: 0;
      ul{
-         width: 30%;
+         width:50vw;
          list-style: none;
          display: flex;
          justify-content: space-evenly;
          li:hover{
+             font-size: 2vw;
              color: $main-hover-color;
              transition: 0.5s;
              cursor:pointer;
@@ -300,5 +301,89 @@ body{
     iframe{
         width: 40%;
         flex-shrink: 1;
+    }
+}
+.why-us{
+    
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    justify-items: center;
+    h4{
+        margin-top: 20px;
+        grid-column: span 3;
+    }
+    h1{
+        color: black;
+        grid-column: span 3;
+    }
+    .whyus-div{
+        margin-top: 3vw;
+        grid-row: span 3;
+        h2{
+            font-family: sans-serif;
+            font-size: 2.5vw;
+        }
+        p{
+            font-family: sans-serif;
+            color: rgb(139, 133, 133);
+            font-size: 1.1vw;
+            font-weight: 100;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            text-align: justify;
+        }
+        button{
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: orange;
+            width: 100%;
+            font-size: 1vw;
+            height: 2vw;
+            text-align: left;
+            border: none;
+            padding-left: 3%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 3%;
+            i{
+                font-size: 1.1vw;
+                font-weight: 600;
+            }
+        }
+    }
+    .whyus-img1{
+        max-width: 25vw;
+        max-height: 18vw;
+    }
+    .whyus-img2{
+        max-width: 25vw;
+        max-height: 18vw;
+    }
+    .whyus-img3{
+        grid-row: span 2;
+        max-width: 25vw;
+        max-height: 40vw;
+    }
+    .whyus-img4{
+        max-width: 25vw;
+        max-height: 20vw;
+    }
+    .whyus-img5{
+        width: 25vw;
+        height: 18vw;
+    }
+
+}
+.about-us{
+    height: 100vh;
+    background-color: black;
+    h1{
+        color: orange;
     }
 }
